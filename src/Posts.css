@@ -1,0 +1,159 @@
+.posts-container {
+  width: 90%;
+  margin: 7vh auto;
+}
+
+.posts-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.posts-header button {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.posts-header button:hover {
+  background-color: #bbb;
+}
+
+.posts-header button:active {
+  background-color: #a3a3a3;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.post-card p {
+  margin: 10px 0;
+}
+
+.post-card button {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.post-card button:hover {
+  color: #555;
+}
+
+.post-card .comments-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.post-card .delete-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.new-post-form {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.new-post-form h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.new-post-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.new-post-form input,
+.new-post-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-post-form button {
+  background-color: #3897f0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.new-post-form button:hover {
+  background-color: #2680c2;
+}
+
+.new-post-form .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  border-radius: 30%;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.new-post-form .close-button:hover {
+  color: #555;
+}
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjusted to display three columns */
+  gap: 20px;
+}
